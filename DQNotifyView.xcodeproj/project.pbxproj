@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B186AFD694C16000FA32BA19 /* Pods_DQNotifyView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB512FCDE193AB4161D0EFA2 /* Pods_DQNotifyView.framework */; };
 		B52228C120B7DBC900DA2C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52228C020B7DBC900DA2C7C /* AppDelegate.swift */; };
 		B52228C320B7DBC900DA2C7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52228C220B7DBC900DA2C7C /* ViewController.swift */; };
 		B52228C620B7DBC900DA2C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52228C420B7DBC900DA2C7C /* Main.storyboard */; };
 		B52228C820B7DBD100DA2C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52228C720B7DBD100DA2C7C /* Assets.xcassets */; };
 		B52228CB20B7DBD100DA2C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52228C920B7DBD100DA2C7C /* LaunchScreen.storyboard */; };
+		B52228D520B7DC0A00DA2C7C /* DQNotifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52228D320B7DC0A00DA2C7C /* DQNotifyView.swift */; };
+		B52228D620B7DC0A00DA2C7C /* DQNotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52228D420B7DC0A00DA2C7C /* DQNotifyManager.swift */; };
+		B52228D820B7DC8D00DA2C7C /* DQNotifyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52228D720B7DC8D00DA2C7C /* DQNotifyItem.swift */; };
+		B52228DA20B7E08A00DA2C7C /* Timer+DQCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52228D920B7E08A00DA2C7C /* Timer+DQCallback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B6FAE6F22D0C3CB90E42F1B /* Pods-DQNotifyView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DQNotifyView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DQNotifyView/Pods-DQNotifyView.debug.xcconfig"; sourceTree = "<group>"; };
+		69BA3F0D05893ADD61B38CDA /* Pods-DQNotifyView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DQNotifyView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DQNotifyView/Pods-DQNotifyView.release.xcconfig"; sourceTree = "<group>"; };
 		B52228BD20B7DBC900DA2C7C /* DQNotifyView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DQNotifyView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52228C020B7DBC900DA2C7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B52228C220B7DBC900DA2C7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		B52228C720B7DBD100DA2C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B52228CA20B7DBD100DA2C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B52228CC20B7DBD100DA2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52228D320B7DC0A00DA2C7C /* DQNotifyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQNotifyView.swift; sourceTree = "<group>"; };
+		B52228D420B7DC0A00DA2C7C /* DQNotifyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQNotifyManager.swift; sourceTree = "<group>"; };
+		B52228D720B7DC8D00DA2C7C /* DQNotifyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQNotifyItem.swift; sourceTree = "<group>"; };
+		B52228D920B7E08A00DA2C7C /* Timer+DQCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+DQCallback.swift"; sourceTree = "<group>"; };
+		EB512FCDE193AB4161D0EFA2 /* Pods_DQNotifyView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DQNotifyView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B186AFD694C16000FA32BA19 /* Pods_DQNotifyView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046665951F233E54428794A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB512FCDE193AB4161D0EFA2 /* Pods_DQNotifyView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B90E46CFFB7A9045E1C51BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B6FAE6F22D0C3CB90E42F1B /* Pods-DQNotifyView.debug.xcconfig */,
+				69BA3F0D05893ADD61B38CDA /* Pods-DQNotifyView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B52228B420B7DBC900DA2C7C = {
 			isa = PBXGroup;
 			children = (
 				B52228BF20B7DBC900DA2C7C /* DQNotifyView */,
 				B52228BE20B7DBC900DA2C7C /* Products */,
+				8B90E46CFFB7A9045E1C51BB /* Pods */,
+				046665951F233E54428794A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +86,7 @@
 		B52228BF20B7DBC900DA2C7C /* DQNotifyView */ = {
 			isa = PBXGroup;
 			children = (
+				B52228D220B7DBDA00DA2C7C /* NotifyView */,
 				B52228C020B7DBC900DA2C7C /* AppDelegate.swift */,
 				B52228C220B7DBC900DA2C7C /* ViewController.swift */,
 				B52228C420B7DBC900DA2C7C /* Main.storyboard */,
@@ -64,6 +97,17 @@
 			path = DQNotifyView;
 			sourceTree = "<group>";
 		};
+		B52228D220B7DBDA00DA2C7C /* NotifyView */ = {
+			isa = PBXGroup;
+			children = (
+				B52228D420B7DC0A00DA2C7C /* DQNotifyManager.swift */,
+				B52228D320B7DC0A00DA2C7C /* DQNotifyView.swift */,
+				B52228D720B7DC8D00DA2C7C /* DQNotifyItem.swift */,
+				B52228D920B7E08A00DA2C7C /* Timer+DQCallback.swift */,
+			);
+			path = NotifyView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B52228CF20B7DBD100DA2C7C /* Build configuration list for PBXNativeTarget "DQNotifyView" */;
 			buildPhases = (
+				B849FD3073DB68D3730E91F7 /* [CP] Check Pods Manifest.lock */,
 				B52228B920B7DBC900DA2C7C /* Sources */,
 				B52228BA20B7DBC900DA2C7C /* Frameworks */,
 				B52228BB20B7DBC900DA2C7C /* Resources */,
+				197ACCB376E9F7AB7E4EC642 /* [CP] Embed Pods Frameworks */,
+				F120611D7FF2050A566D0FB4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +177,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		197ACCB376E9F7AB7E4EC642 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DQNotifyView/Pods-DQNotifyView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DQNotifyView/Pods-DQNotifyView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B849FD3073DB68D3730E91F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DQNotifyView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F120611D7FF2050A566D0FB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DQNotifyView/Pods-DQNotifyView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B52228B920B7DBC900DA2C7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52228D820B7DC8D00DA2C7C /* DQNotifyItem.swift in Sources */,
 				B52228C320B7DBC900DA2C7C /* ViewController.swift in Sources */,
+				B52228D620B7DC0A00DA2C7C /* DQNotifyManager.swift in Sources */,
 				B52228C120B7DBC900DA2C7C /* AppDelegate.swift in Sources */,
+				B52228D520B7DC0A00DA2C7C /* DQNotifyView.swift in Sources */,
+				B52228DA20B7E08A00DA2C7C /* Timer+DQCallback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +383,13 @@
 		};
 		B52228D020B7DBD100DA2C7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6FAE6F22D0C3CB90E42F1B /* Pods-DQNotifyView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LKD2S6YKF;
 				INFOPLIST_FILE = DQNotifyView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +403,13 @@
 		};
 		B52228D120B7DBD100DA2C7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69BA3F0D05893ADD61B38CDA /* Pods-DQNotifyView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LKD2S6YKF;
 				INFOPLIST_FILE = DQNotifyView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
