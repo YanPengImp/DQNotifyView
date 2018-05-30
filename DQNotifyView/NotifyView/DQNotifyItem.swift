@@ -12,4 +12,5 @@ class DQNotifyItem: NSObject {
     var icon: UIImage?
     var title: String?
     var content: String?
+    var clickBlock: (()->Void)?
 }

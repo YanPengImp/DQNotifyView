@@ -36,6 +36,9 @@ class ViewController: UIViewController {
         let item = DQNotifyItem()
         item.title = String(format: "新消息：%d", i)
         item.content = String(format: "这是一条测试的新消息：%d", i)
+        item.clickBlock =  {
+            print("点击事件")
+        }
         DQNotifyManager.shared.showNotifyView(item)
     }
 

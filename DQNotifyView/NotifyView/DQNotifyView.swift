@@ -79,6 +79,8 @@ class DQNotifyView: UIView, UIGestureRecognizerDelegate {
         pan.delegate = self
         self.isUserInteractionEnabled = true
         self.addGestureRecognizer(pan)
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(tapAction(_:)))
+        self.addGestureRecognizer(tap)
     }
 
     override func didMoveToSuperview() {
@@ -156,6 +158,11 @@ class DQNotifyView: UIView, UIGestureRecognizerDelegate {
                 }
             }
         }
+    }
+
+    @objc func tapAction(_ gesture: UITapGestureRecognizer) {
+        notifyItem?.clickBlock?()
+        self.timer?.fire()
     }
 
 }
